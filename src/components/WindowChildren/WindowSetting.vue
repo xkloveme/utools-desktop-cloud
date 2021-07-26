@@ -12,7 +12,7 @@
         <div class=" tw-w-52 tw-bg-white tw-h-full tw-flex tw-flex-col tw-px-3 tw-py-2 tw-flex-none" >
           <WindowSettingIcon :tag="'Profile'" :img="'profile'" :selected_tag="selected_tag" @click.native="{selected_tag = 'Profile';selected_tag_2 = 'About Me'}"/>
           <WindowSettingIcon :tag="'Skills'" :img="'skills'" :selected_tag="selected_tag"  @click.native="{selected_tag = 'Skills';selected_tag_2 = 'Badges'}"/>
-          <WindowSettingIcon :tag="'Resume'" :img="'paint'" :selected_tag="selected_tag"  @click.native="selected_tag = 'Resume'"/>
+          <!-- <WindowSettingIcon :tag="'Resume'" :img="'paint'" :selected_tag="selected_tag"  @click.native="selected_tag = 'Resume'"/> -->
         </div>
         <div class=" tw-flex-grow tw-h-full  tw-p-2">
           <div class="tw-w-full tw-h-full  tw-flex">
@@ -20,7 +20,7 @@
               <div class="tw-w-full tw-h-full" v-if="selected_tag === 'Profile'">
                 <WindowSettingIcon :tag="'About Me'" :mdi="'beaker-question'" :selected_tag="selected_tag_2"  @click.native="selected_tag_2 = 'About Me'"/>
                 <WindowSettingIcon :tag="'Github Stats'" :mdi="'card-account-details-star'" :selected_tag="selected_tag_2"  @click.native="selected_tag_2 = 'Github Stats'"/>
-                <WindowSettingIcon :tag="'CodeWars'" :mdi="'pistol'" :selected_tag="selected_tag_2"  @click.native="selected_tag_2 = 'CodeWars'"/>
+                <!-- <WindowSettingIcon :tag="'CodeWars'" :mdi="'pistol'" :selected_tag="selected_tag_2"  @click.native="selected_tag_2 = 'CodeWars'"/> -->
               </div>
               <div class="tw-w-full tw-h-full" v-if="selected_tag === 'Skills'">
                 <WindowSettingIcon :tag="'Badges'" :mdi="'shield-half-full'" :selected_tag="selected_tag_2"  @click.native="selected_tag_2 = 'Badges'"/>
@@ -32,22 +32,22 @@
               <div class=" tw-w-full tw-h-full" v-if="selected_tag === 'Profile'">
                 <div ref="overall_page" class="tw-w-full tw-h-full tw-items-center tw-flex tw-flex-col" style="text-align:center" v-if="selected_tag_2 ==='About Me'">
                   <div class=" tw-w-20 tw-h-20 tw-rounded-full tw-overflow-hidden tw-mt-16">
-                    <img src="../../assets/images/goodmanwen.png" alt="" class="tw-bg-red-500">
+                    <img src="../../assets/images/icon.png" alt="" class="tw-bg-red-500">
                   </div>
-                  <div class="tw-mt-3 tw-text-gray-400">GoodManWEN</div>
-                  <div class="tw-text-xl tw-mt-2 tw-tracking-wide"> Hi👋, this is WEN, your solution provider.</div>
-                  <div class="tw-text-lg tw-mt-2 tw-tracking-wide"> As majored in 📊 Big Data & High Performance Computing, I am also interested in, and got an exellent ability in web developing. </div>
+                  <div class="tw-mt-3 tw-text-gray-400"></div>
+                  <div class="tw-text-xl tw-mt-2 tw-tracking-wide"> Hi👋, 这是你的桌面云.</div>
+                  <div class="tw-text-lg tw-mt-2 tw-tracking-wide"> 你可以听音乐,玩游戏,访问网址. </div>
                 </div>
                 <div ref="github_page" class="tw-w-full tw-h-full tw-items-center tw-flex tw-flex-col tw-justify-center" style="text-align:center" v-if="selected_tag_2 ==='Github Stats'">
-                  <img src="https://github-readme-stats.vercel.app/api?username=GoodManWEN&show_icons=true&line_height=24" alt="" class="tw-w-140 tw-h-40">
-                  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=goodmanwen" alt="" class="tw-mt-6  tw-w-120 tw-h-72">
+                  <img src="https://github-readme-stats.vercel.app/api?username=xkloveme&show_icons=true&line_height=24" alt="" class="tw-w-140 tw-h-40">
+                  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=xkloveme" alt="" class="tw-mt-6  tw-w-120 tw-h-72">
                 </div>
-                <div ref="github_page" class="tw-w-full tw-h-full tw-items-center tw-flex tw-flex-col" style="text-align:center" v-if="selected_tag_2 ==='CodeWars'">
+                <!-- <div ref="github_page" class="tw-w-full tw-h-full tw-items-center tw-flex tw-flex-col" style="text-align:center" v-if="selected_tag_2 ==='CodeWars'">
                   <div class=" tw-w-20 tw-h-20 tw-rounded-full tw-bg-red-50 tw-overflow-hidden tw-mt-16">
                     <img src="../../assets/images/goodmanwen.png" alt="" class="tw-bg-red-500">
                   </div>
                   <img src="https://www.codewars.com/users/GoodManWEN/badges/large" alt="" class="tw-mt-10">
-                </div>
+                </div> -->
               </div>
               <div class="tw-w-full tw-h-full" v-if="selected_tag === 'Skills'">
                 <div ref="overall_page" class="tw-w-full tw-h-full tw-items-center tw-flex tw-flex-col tw-justify-center" style="text-align:center" v-if="selected_tag_2 ==='Badges'">
@@ -85,11 +85,11 @@
                   <div class="tw-text-lg tw-mt-2 tw-tracking-wide tw-mb-10"> Thanks for watching this demo, hope you enjoy it. </div>
                 </div> 
               </div>
-              <div class="tw-w-full tw-h-full" v-if="selected_tag === 'Resume'">
+              <!-- <div class="tw-w-full tw-h-full" v-if="selected_tag === 'Resume'">
                 <div ref="overall_page" class="tw-w-full tw-h-full tw-items-center tw-flex tw-flex-col tw-justify-center" style="text-align:center">
                   <div class="tw-text-4xl tw-mt-2 tw-tracking-wider"> Coming Soon </div>
                 </div>
-              </div>
+              </div> -->
             </div>
 
           </div>
