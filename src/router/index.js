@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import store from '../store'
-import LoginPage from '../components/LoginPage/LoginPage'
+// import LoginPage from '../components/LoginPage/LoginPage'
 import Desktop from '../components/Desktop/Desktop'
 import Down from '../components/Down'
 
@@ -19,7 +19,7 @@ const routes = [
   {
     path: '/login',
     name: "LoginPage",
-    component: LoginPage,
+    component: Desktop,
     meta : {
       title:"Deepin"
     }
