@@ -57,8 +57,6 @@ const store = new Vuex.Store({
         obj.default_width= Math.min(state.fullWidth * 0.8 , 1580)
       } else if (payload.type === 'music') {
         obj.type="music"
-        obj.default_width=400
-        obj.default_width=400
         obj.fixedsize=true
       } else if (payload.type === 'settings') {
         obj.type="settings"
@@ -66,6 +64,8 @@ const store = new Vuex.Store({
         obj.type="terminal"
       } else if (payload.type === 'vscode') {
         obj.type="vscode"
+      }else if (payload.type === 'game') {
+        obj.type="game"
       }
       state.window_list.push(obj)
       this.commit('refresh_window_focus', {uuid:new_uuid})

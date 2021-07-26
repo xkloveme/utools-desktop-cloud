@@ -38,8 +38,8 @@ export default {
   },
   data(){
     return {
-			show_sidebar: true,
-      show_sidebar_daemon: true,
+			show_sidebar: false,
+      show_sidebar_daemon: false,
       daemon_timeout:null,
       max_articles: 5,
       articles: {

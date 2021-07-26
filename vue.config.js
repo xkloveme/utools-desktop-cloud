@@ -3,7 +3,7 @@ module.exports = {
     'vuetify'
   ],
   publicPath: './', // 此处改为 './' 即可
-  outputDir: './docs',
+  outputDir: './dist',
   devServer:{
     host:'0.0.0.0',
     proxy:{
