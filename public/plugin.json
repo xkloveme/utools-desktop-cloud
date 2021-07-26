@@ -1,0 +1,18 @@
+{
+  "pluginName": "桌面",
+  "description": "桌面",
+  "version": "0.0.3",
+  "main": "index.html",
+  "preload": "preload.js",
+  "author": "xkloveme",
+  "homepage": "https://github.com/xkloveme",
+  "logo": "icon.png",
+  "features": [
+    {
+      "code": "桌面",
+      "explain": "桌面",
+      "cmds": ["桌面"],
+      "icon": "icon.png"
+    }
+  ]
+}

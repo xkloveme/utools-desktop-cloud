@@ -1,0 +1,18 @@
+{
+  "pluginName": "weather",
+  "description": "天气",
+  "version": "0.0.3",
+  "main": "dist/index.html",
+  "preload": "dist/preload.js",
+  "author": "xkloveme",
+  "homepage": "https://github.com/xkloveme",
+  "logo": "",
+  "features": [
+    {
+      "code": "weather",
+      "explain": "天气",
+      "cmds": ["weather", "天气", "温度"],
+      "icon": "dist/icon.png"
+    }
+  ]
+}
