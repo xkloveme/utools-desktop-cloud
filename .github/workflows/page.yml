@@ -42,7 +42,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
-          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
           # 部署到 gh-pages 分支
           BRANCH: gh-pages
           # 部署目录为 VuePress 的默认输出目录
