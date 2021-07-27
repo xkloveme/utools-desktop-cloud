@@ -279,7 +279,7 @@ export default {
       date_month: 1,
       date_date: 1,
       date_weekday: 0,
-      show_drawer: true,
+      show_drawer: false,
       has_text: false,
       has_explorer: false,
       has_music: false,
