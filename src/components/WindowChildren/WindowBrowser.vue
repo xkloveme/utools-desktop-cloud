@@ -49,10 +49,10 @@ export default {
       tipoffsetY:0,
       tipoffsetX:0,
       show_lock_tip:false,
-      input_src:"http://lab.mkblog.cn/FCGames",
-      real_src:'http://lab.mkblog.cn/FCGames',
+      input_src:"https://www.yikm.net/",
+      real_src:'https://www.yikm.net/',
       no_http:false,
-      href_stack:['http://lab.mkblog.cn/FCGames','http://www.jixiaokang.com/nav'],
+      href_stack:['https://www.yikm.net/','http://www.jixiaokang.com/nav'],
       href_stack_pointer:0,
     }
   },
@@ -126,7 +126,7 @@ export default {
       }
       let googlepat = /^((https|http|ftp|rtsp|mms)?:\/\/)?[w.]*google\.com(\/)*$/
       if (googlepat.test(this.input_src)) {
-        this.input_src = 'http://lab.mkblog.cn/FCGames'
+        this.input_src = 'https://www.yikm.net/'
         noheader = false
       }
       if (noheader) {
