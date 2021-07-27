@@ -14,10 +14,11 @@
     <div class="tw-w-full tw-h-full tw-relative">
       <div
         ref="background"
-        class="tw-relative tw-pb-9/16 tw-h-full tw-select-none"
+        class="tw-relative tw-pb-9/16 tw-h-full tw-select-none tw-bg-green-900"
       >
+          <!-- src="../../assets/images/desktop_1.jpg" -->
         <img
-          src="../../assets/images/desktop_1.jpg"
+          :src="'http://bing.getlove.cn/bingImage?t='+new Date()"
           alt=""
           class="tw-absolute tw-h-full tw-object-cover"
           @load="bgloaded"
