@@ -81,7 +81,7 @@ export default {
       this.$store.commit('hide_context_menu')
     },
     open_project(){
-      window.open("https://github.com/GoodManWEN/GoodManWEN.github.io", "_blank");
+      window.open("https://github.com/xkloveme/utools-desktop-cloud", "_blank");
       this.$store.commit('hide_context_menu')
     },
     reload_clicked(){

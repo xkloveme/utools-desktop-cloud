@@ -3,7 +3,7 @@
     <template v-slot:header>
       <div class="tw-flex tw-items-center tw-select-none" style="pointer-events:none;"> 
         <img src="../../assets/images/icons/shell.png" alt="" style="pointer-events:none;" class=" tw-w-8 tw-h-7 tw-ml-4">
-        <div class=" tw-ml-4 tw-font-semibold tw-tracking-wider tw-h-8 tw-rounded-lg tw-px-4 tw-py-1  tw-text-white tw-bg-mygray-b13 hover:tw-bg-mygray-b14 " style="pointer-events:auto;max-width:300px;white-space:nowrap;text-overflow: ellipsis;overflow: hidden;"> guest@wen-PC: ~/ </div>
+        <div class=" tw-ml-4 tw-font-semibold tw-tracking-wider tw-h-8 tw-rounded-lg tw-px-4 tw-py-1  tw-text-white tw-bg-mygray-b13 hover:tw-bg-mygray-b14 " style="pointer-events:auto;max-width:300px;white-space:nowrap;text-overflow: ellipsis;overflow: hidden;"> guest@xkloveme-PC: ~/ </div>
       </div>
     </template>
     <template v-slot:content>
@@ -62,7 +62,7 @@ export default {
       return this.$store.state.filemap
     },
     header(){
-      let res = "guest@wen-PC: ~/"
+      let res = "guest@xkloveme-PC: ~/"
       for (let dir of this.path_stack) {
         res += (dir + '/')
       }

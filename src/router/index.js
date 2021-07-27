@@ -21,7 +21,7 @@ const routes = [
     name: "LoginPage",
     component: Desktop,
     meta : {
-      title:"Deepin"
+      title:"桌面云"
     }
   },
   {
@@ -29,7 +29,7 @@ const routes = [
     name: "DesktopWithPost",
     component: Desktop,
     meta : {
-      title:"Welcom to WEN's blog"
+      title:"桌面云"
     }
   },
   {
@@ -37,7 +37,7 @@ const routes = [
     name: "Desktop",
     component: Desktop,
     meta : {
-      title:"Welcom to WEN's blog"
+      title:"桌面云"
     }
   },
   {
