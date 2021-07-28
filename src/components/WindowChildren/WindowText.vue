@@ -232,4 +232,14 @@ export default {
   border-radius: 0;
   /* background: rgba(0,0,0,0.1); */
 }
+.zoomined-frame{
+  /* width: 80% !important;
+  height: 80% !important;
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0; */
+  width: 100%;
+  height: 100%;
+}
 </style>
