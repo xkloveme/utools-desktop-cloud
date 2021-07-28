@@ -109,7 +109,7 @@
                 mr_clicked($event, 'browser', has_browser)
               "
             />
-            <Icon
+            <!-- <Icon
               :srcc="'music'"
               mode="large"
               class="tw-ml-3"
@@ -120,7 +120,7 @@
               @contextmenu.prevent.native="
                 mr_clicked($event, 'music', has_music)
               "
-            />
+            /> -->
             <Icon
               :srcc="'vscode'"
               mode="large"
