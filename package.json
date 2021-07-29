@@ -11,6 +11,7 @@
   "dependencies": {
     "autoprefixer": "^9.8.6",
     "axios": "^0.21.1",
+    "compression-webpack-plugin": "^5.0.1",
     "core-js": "^3.6.5",
     "markdown-it-vue": "^1.1.6",
     "postcss": "^7.0.35",
