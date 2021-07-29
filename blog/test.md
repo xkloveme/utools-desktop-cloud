@@ -1,7 +1,7 @@
 <!--
  * @Author: xkloveme
  * @Date: 2021-07-28 11:37:29
- * @LastEditTime: 2021-07-28 11:48:37
+ * @LastEditTime: 2021-07-28 22:29:01
  * @LastEditors: xkloveme
  * @Description: 
  * @FilePath: /utools-desktop-cloud/blog/test.md
@@ -12,9 +12,9 @@
 
 
 <iframe 
-    width="100%" 
-    height="450" 
-    src="http://cdn.video.picasso.dandanjiang.tv/59f04f0de7bce72261c2aae8.mp4?newver=0.264477607069&sign=6733aecdb9c8f1f63a04e2d41b43e254&t=6100ef20"
+    width="100%"
+    height="450"
+    src="https://www.jiujiuyc.com"
     frameborder="0" 
     allowfullscreen>
 </iframe>
