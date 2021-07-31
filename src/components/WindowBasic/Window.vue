@@ -77,12 +77,12 @@
           </div>
           <WindowHeaderCursor @mousedown.native="move_clicked" />
           <div
-            class="tw-w-full tw-h-10 cursor-move tw-absolute"
+            class="tw-w-full tw-h-9 cursor-move tw-absolute"
             v-if="show_cursor_move"
             :class="{ 'tw-rounded-t-xl': !full_windowed }"
           ></div>
           <div
-            class="tw-w-full tw-h-10 tw-absolute tw-overflow-hidden"
+            class="tw-w-full tw-h-9 tw-absolute tw-overflow-hidden"
             style="pointer-events: none"
             :class="{ 'tw-rounded-t-xl': !full_windowed }"
           >
@@ -210,7 +210,7 @@ export default {
       closed: false,
       // minimized:false,
       full_windowed: false,
-      backup_width: '800px',
+      backup_width: '900px',
       backup_height: '600px',
       backup_top: '0px',
       backup_left: '0px',

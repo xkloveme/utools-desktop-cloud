@@ -3,10 +3,10 @@
     <template v-slot:header>
       <div class="tw-flex tw-items-center tw-select-none" style="pointer-events:none;"> 
         <img src="../../assets/images/icons/doc.png" alt="" style="pointer-events:auto;" class=" tw-w-8 tw-h-7 tw-ml-4">
-        <div class="tw-h-9 tw-flex tw-items-center tw-justify-center tw-rounded-lg tw-bg-mygray-b4 hover:tw-bg-mygray-b5 tw-ml-3" style="pointer-events:auto;" :style="{'opacity':global_focus===uuid?'1':'0.85'}" @click="title_clicked">
-          <div class="tw-h-full tw-px-3  tw-text-sm tw-font-normal tw-text-gray-50 tw-pt-2" style="white-space:nowrap;text-overflow: ellipsis;overflow: hidden;max-width:300px" >{{filename}}</div>
+        <div class="tw-py-1 tw-flex tw-items-center tw-justify-center tw-rounded-lg tw-bg-mygray-b4 hover:tw-bg-mygray-b5 tw-ml-3" style="pointer-events:auto;" :style="{'opacity':global_focus===uuid?'1':'0.85'}" @click="title_clicked">
+          <div class="tw-h-full tw-px-3  tw-text-sm tw-font-normal tw-text-gray-50 tw-flex tw-items-center" style="white-space:nowrap;text-overflow: ellipsis;overflow: hidden;max-width:300px" >{{filename}}</div>
         </div>
-        <div class="tw-h-9 tw-px-3  tw-flex tw-items-center tw-justify-center tw-bg-mygray-b3  tw-rounded-lg tw-ml-3 hover:tw-bg-mygray-b1 tw-text-mygray-b8" style="pointer-events:auto;">
+        <div class="tw-py-1 tw-px-3  tw-flex tw-items-center tw-justify-center tw-bg-mygray-b3  tw-rounded-lg tw-ml-3 hover:tw-bg-mygray-b1 tw-text-mygray-b8" style="pointer-events:auto;">
           <v-icon small>add</v-icon>
         </div>
         <!-- <div class=" tw-ml-4 tw-font-bold tw-tracking-wider"> {{filename}} </div> -->
@@ -46,7 +46,7 @@
           </div>
         </div>
         <div class=" tw-flex-grow tw-w-full tw-flex flex-row">
-          <div class="tw-w-8 tw-h-full tw-px-1.5 tw-py-1" style="background-color:#f0f0f0;color:#a1b9cf">
+          <div class="tw-h-full tw-px-1.5 tw-py-1" style="background-color:#f0f0f0;color:#a1b9cf">
             <span class="tw-hidden">1</span>
           </div>
           <div class="tw-w-full  tw-bg-white tw-pl-5 tw-pr-3 tw-py-1.5 change-srollbar" style="overflow:auto" :style="{'height': cont_height +'px'}">

@@ -133,7 +133,7 @@ export default {
     },
     default_width:{
       type:Number,
-      default:680
+      default:880
     }
   },
   created(){
