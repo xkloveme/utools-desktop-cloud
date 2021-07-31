@@ -6,20 +6,20 @@
       <div class="tw-h-full tw-w-full tw-rounded-xl tw-flex tw-flex-col tw-items-center tw-border tw-border-gray-500" style="background-color:rgba(235,235,235,.2)">
         <div ref="headline" class=" tw-h-9 tw-w-full tw-flex tw-items-end tw-mt-4 tw-bg-opacity-100">
           <div class="tw-flex-none tw-w-12 tw-h-full tw-flex tw-justify-center tw-items-center tw-pl-3">
-            <button class=" tw-w-9 tw-h-9 tw-bg-gray-50 hover:tw-bg-gray-200 tw-rounded-full tw-outline-none active:tw-bg-blue-300" @click="reload_messages(true)">
-              <v-icon class="tw-text-blue-400">mdi-bell</v-icon>
+            <button class=" tw-w-9 tw-h-9 tw-bg-gray-50 hover:tw-bg-gray-200 tw-rounded-full tw-outline-none active:tw-bg-blue-300 align-middle" @click="reload_messages(true)">
+              <v-icon class="tw-text-blue-400 tw-text-3xl">notifications_active</v-icon>
             </button>
           </div>
-          <div class="tw-flex-grow tw-flex tw-justify-center tw-text-lg tw-font-bold">
+          <div class="tw-flex-grow tw-flex tw-justify-center tw-text-2xl tw-font-bold">
             Message Center</div>
           <div class="tw-flex-none tw-w-12 tw-h-full tw-flex tw-justify-center tw-items-center tw-pr-3">
             <button class=" tw-w-9 tw-h-9  hover:tw-bg-gray-200 tw-rounded-full tw-outline-none active:tw-bg-blue-300" @click="clean_messages">
-              <v-icon class="tw-text-gray-800" >mdi-delete-sweep</v-icon>
+              <v-icon class="tw-text-gray-800 tw-text-3xl" >delete_sweep</v-icon>
             </button>
           </div>
         </div>
         <div class="tw-pt-4 tw-pb-1 px-3 tw-flex tw-flex-row tw-justify-start tw-flex-none tw-w-full">
-          <div class="tw-text-2xl tw-font-extrabold ml-4">News</div>
+          <div class="tw-text-2xl tw-font-extrabold tw-ml-6">News</div>
         </div>
         <div class="tw-w-full  tw-overflow-scroll">
           <Message v-for="(item,i) in articles_display" :key="i" :title="item.title" :content="item.content" :abstract="item.abstract" :time="item.time" :lastedittime="item.lastedittime" :filename="item.filename" :filesrc="item.filesrc" :filesize="item.filesize" @close_triggered="close_triggered" @delete_item="delete_item"/>

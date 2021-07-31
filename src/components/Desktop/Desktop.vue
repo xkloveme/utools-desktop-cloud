@@ -2,23 +2,24 @@
   <div
     class="
       tw-antialiased
-      tw-w-screen
-      tw-h-screen
+      tw-h-full
+      tw-w-full
       tw-overflow-hidden
       tw-flex
       tw-justify-center
       tw-items-center
+      tw-absolute realbackground
     "
-    style="min-height: 600px; min-width: 800px"
+    style="min-height: 600px; min-width: 900px"
   >
     <div class="tw-w-full tw-h-full tw-relative">
       <div
         ref="background"
         class="tw-relative tw-pb-9/16 tw-h-full tw-select-none tw-bg-green-900"
       >
-          <!-- src="../../assets/images/desktop_1.jpg" -->
+        <!-- src="../../assets/images/desktop_1.jpg" -->
         <img
-          :src="'http://bing.getlove.cn/bingImage?t='+new Date()"
+          :src="'http://bing.getlove.cn/bingImage?t=' + new Date()"
           alt=""
           class="tw-absolute tw-h-full tw-object-cover"
           @load="bgloaded"
@@ -123,7 +124,6 @@
           class="tw-absolute"
           style="
             z-index: 1001;
-            width: 600px;
             height: 200px;
             top: 0px;
             left: 0px;

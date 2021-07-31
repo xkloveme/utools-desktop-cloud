@@ -18,13 +18,13 @@
           <div class="tw-w-full tw-h-full  tw-flex">
             <div class="tw-w-48 tw-flex-none tw-rounded-xl tw-bg-white tw-p-2">
               <div class="tw-w-full tw-h-full" v-if="selected_tag === 'Profile'">
-                <WindowSettingIcon :tag="'About Me'" :mdi="'beaker-question'" :selected_tag="selected_tag_2"  @click.native="selected_tag_2 = 'About Me'"/>
-                <WindowSettingIcon :tag="'Github Stats'" :mdi="'card-account-details-star'" :selected_tag="selected_tag_2"  @click.native="selected_tag_2 = 'Github Stats'"/>
-                <WindowSettingIcon :tag="'CodeWars'" :mdi="'pistol'" :selected_tag="selected_tag_2"  @click.native="selected_tag_2 = 'CodeWars'"/>
+                <WindowSettingIcon :tag="'About Me'" :mdi="'star'" :selected_tag="selected_tag_2"  @click.native="selected_tag_2 = 'About Me'"/>
+                <WindowSettingIcon :tag="'Github Stats'" :mdi="'auto_awesome'" :selected_tag="selected_tag_2"  @click.native="selected_tag_2 = 'Github Stats'"/>
+                <WindowSettingIcon :tag="'CodeWars'" :mdi="'subtitles'" :selected_tag="selected_tag_2"  @click.native="selected_tag_2 = 'CodeWars'"/>
               </div>
               <div class="tw-w-full tw-h-full" v-if="selected_tag === 'Skills'">
-                <WindowSettingIcon :tag="'Badges'" :mdi="'shield-half-full'" :selected_tag="selected_tag_2"  @click.native="selected_tag_2 = 'Badges'"/>
-                <WindowSettingIcon :tag="'And Some Else'" :mdi="'card-account-details-star'" :selected_tag="selected_tag_2"  @click.native="selected_tag_2 = 'And Some Else'"/>
+                <WindowSettingIcon :tag="'Badges'" :mdi="'local_police'" :selected_tag="selected_tag_2"  @click.native="selected_tag_2 = 'Badges'"/>
+                <WindowSettingIcon :tag="'And Some Else'" :mdi="'card_membership'" :selected_tag="selected_tag_2"  @click.native="selected_tag_2 = 'And Some Else'"/>
               </div>
             </div>
             <div class="vl"></div>
@@ -82,7 +82,7 @@
                 </div>
                 <div ref="github_page" class="tw-w-full tw-h-full tw-items-center tw-flex tw-flex-col tw-justify-center tw-mb-16" style="text-align:center" v-if="selected_tag_2 ==='And Some Else'">
                   <img src="../../assets/images/holo.gif" alt="" class="">
-                  <div class="tw-text-lg tw-mt-2 tw-tracking-wide tw-mb-10"> Thanks for watching this demo, hope you enjoy it. </div>
+                  <div class="tw-text-lg tw-mt-2 tw-tracking-wide tw-mb-10"> Thanks for watching this cloud, hope you enjoy it. </div>
                 </div> 
               </div>
               <!-- <div class="tw-w-full tw-h-full" v-if="selected_tag === 'Resume'">

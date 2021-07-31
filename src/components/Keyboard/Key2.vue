@@ -3,14 +3,14 @@
     <div class="tw-w-full tw-h-1/2 key-background2 tw-rounded-md " ref="inner">
       <div class="tw-flex tw-justify-center tw-items-center tw-w-11 tw-h-11 tw-pt-1 tw-font-light">
         <span v-if="letter.length<=5">{{letter}}</span>
-        <div v-if="letter=='icon_back'"><v-icon class="tw-text-gray-100 ">mdi-backspace-outline</v-icon></div>
-        <div v-if="letter=='icon_xxxx'"><v-icon class="tw-text-gray-100 ">mdi-close-box-outline</v-icon></div>
-        <div v-if="letter=='icon_shift'"><v-icon class="tw-text-gray-100 ">mdi-arrow-up-bold-outline</v-icon></div>
-        <div v-if="letter=='icon_enter'"><v-icon class="tw-text-gray-100 ">mdi-subdirectory-arrow-left</v-icon></div>
-        <div v-if="letter=='icon_left'"><v-icon class="tw-text-gray-100 ">mdi-arrow-left</v-icon></div>
-        <div v-if="letter=='icon_right'"><v-icon class="tw-text-gray-100 ">mdi-arrow-right</v-icon></div>
-        <div v-if="letter=='icon_up'"><v-icon class="tw-text-gray-100 ">mdi-arrow-up</v-icon></div>
-        <div v-if="letter=='icon_down'"><v-icon class="tw-text-gray-100 ">mdi-arrow-down</v-icon></div>
+        <div v-if="letter=='icon_back'"><v-icon class="tw-text-gray-100 ">backspace</v-icon></div>
+        <div v-if="letter=='icon_xxxx'"><v-icon class="tw-text-gray-100 ">keyboard_hide</v-icon></div>
+        <div v-if="letter=='icon_shift'"><v-icon class="tw-text-gray-100 ">file_upload</v-icon></div>
+        <div v-if="letter=='icon_enter'"><v-icon class="tw-text-gray-100 ">subdirectory_arrow_left</v-icon></div>
+        <div v-if="letter=='icon_left'"><v-icon class="tw-text-gray-100 ">first_page</v-icon></div>
+        <div v-if="letter=='icon_right'"><v-icon class="tw-text-gray-100 ">last_page</v-icon></div>
+        <div v-if="letter=='icon_up'"><v-icon class="tw-text-gray-100 tw-transform tw-rotate-90">first_page</v-icon></div>
+        <div v-if="letter=='icon_down'"><v-icon class="tw-text-gray-100  tw-transform tw-rotate-90">last_page</v-icon></div>
       </div>
     </div>
   </div>

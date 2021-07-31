@@ -9,7 +9,7 @@
         <div class="tw-text-gray-600 tw-text-xs tw-mr-3" v-if="!mouseon"> {{time}} </div>
         <div class="tw-text-xs tw-mr-3" v-if="mouseon"> 
           <button class=" tw-w-5  tw-h-5 tw-bg-gray-50 tw-rounded-full tw-flex tw-justify-center tw-items-center hover:tw-bg-gray-200 hover:tw-shadow-md tw-outline-none" @click="close_triggered">
-            <v-icon x-small>mdi-close</v-icon>
+            <v-icon x-small>cancel</v-icon>
           </button>
         </div>
       </div>
@@ -18,9 +18,9 @@
           <button class="tw-w-16 tw-h-9 tw-rounded-lg tw-flex  tw-justify-center tw-items-center tw-font-bold tw-text-sm tw-bg-opacity-40 tw-bg-gray-100 hover:tw-bg-opacity-80 hover:tw-shadow-sm tw-outline-none" @click="view_triggered"> View </button>
         </div>
         <div class=" tw-flex-grow tw-flex tw-flex-col">
-          <div class=" tw-flex tw-items-center tw-py-1 tw-px-4 tw-font-bold tw-mt-1 tw-tracking-wide tw-text-sm" style="font-size:15px !important">{{title}}</div>
+          <div class=" tw-flex tw-items-center tw-py-1 tw-px-4 tw-font-bold tw-mt-1 tw-tracking-wide tw-text-sm" style="font-size:15px !important">{{title || '新的消息'}}</div>
           <div class="tw-flex-gorw tw-text-sm tw-text-gray-600 tw-tracking-wide tw-h-12" >
-            <div class="tw-h-11 tw-w-68 tw-px-4 tw-py-1" style="text-overflow:ellipsis; display: -webkit-box;-webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;">{{abstract}}</div>
+            <div class="tw-h-11 tw-w-68 tw-px-4 tw-py-1" style="text-overflow:ellipsis; display: -webkit-box;-webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;">{{abstract || '点击查看'}}</div>
           </div>
         </div>
       </div>

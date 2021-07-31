@@ -4,14 +4,14 @@
       <div class=" tw-ml-4 tw-font-bold tw-tracking-wider tw-flex tw-items-center tw-select-none" style="pointer-events:none;" > 
         <img src="../../assets/images/icons/explorer.png" alt="" style="pointer-events:auto;" class=" tw-w-8 tw-h-8">
         <div class="tw-w-9 tw-h-9 tw-rounded-l-lg tw-flex tw-justify-center tw-items-center tw-ml-6" style="background-color:#f0f0f0;pointer-events:auto;" :style="{'opacity':global_focus===uuid?'1':'0.85'}">
-          <v-icon style="color:#b0b4bf">mdi-chevron-left</v-icon>
+          <v-icon style="color:#b0b4bf">chevron_left</v-icon>
         </div>
         <div class=" tw-h-9 tw-w-0.5" style="background-color:#ebebeb"></div>
         <div class="tw-w-9 tw-h-9 tw-rounded-r-lg tw-flex tw-justify-center tw-items-center" style="background-color:#f0f0f0;pointer-events:auto;" :style="{'opacity':global_focus===uuid?'1':'0.85'}">
-          <v-icon style="color:#b0b4bf">mdi-chevron-right</v-icon>
+          <v-icon style="color:#b0b4bf">chevron_right</v-icon>
         </div>
         <div class="tw-h-9 tw-px-3  tw-flex tw-items-center tw-justify-center tw-bg-mygray-b2  tw-rounded-lg tw-ml-3" style="pointer-events:auto;" :style="{'opacity':global_focus===uuid?'1':'0.85'}">
-          <v-icon small>mdi-home-heart</v-icon>
+          <v-icon small>home</v-icon>
         </div>
         <div class="tw-h-9 tw-px-3 tw-flex tw-items-center tw-justify-center tw-rounded-lg tw-ml-3 tw-text-sm tw-text-gray-50 tw-font-normal" style="pointer-events:auto;" v-for="(item,i) in open_openpath" :key="i" :class="{'tw-bg-mygray-b2':i!=(open_openpath.length - 1),'tw-bg-mygray-b4':i===(open_openpath.length - 1),'tw-text-mygray-b6':i!=(open_openpath.length - 1),'tw-text-gray-50':i===(open_openpath.length - 1), 'tw-font-semibold':i!=(open_openpath.length - 1),'hover:tw-bg-mygray-b3':i!=(open_openpath.length - 1),'hover:tw-bg-mygray-b5':i===(open_openpath.length - 1)}" :style="{'opacity':global_focus===uuid?'1':'0.85'}" @click="switch_supr_class(i)">
           {{item}}
@@ -22,19 +22,18 @@
       <div class="tw-w-full tw-rounded-b-2xl tw-flex tw-select-none" :style="{'height':cont_height + 'px'}" v-if="true" @contextmenu.prevent="mr_clicked">
         <div ref="leftbar" class="tw-flex-none tw-bg-white tw-rounded-bl-2xl tw-overflow-hidden tw-flex tw-flex-row tw-select-none" style="min-width:160px;max-width:260px;width:208px" :style="{'opacity':global_focus===uuid?'1':'0.85'}">
           <div class=" tw-flex-grow tw-h-full tw-flex tw-items-center tw-flex-col tw-px-3">
-            <WindowFolderIcon :icon="'clock-time-three'" :text="'Recently'"/>
-            <WindowFolderIcon  :icon="'home-heart'" :text="'Home'"/>
-            <WindowFolderIcon  :icon="'television-guide'" :text="'Desktop'"/>
-            <WindowFolderIcon  :icon="'filmstrip'" :text="'Videos'"/>
-            <WindowFolderIcon  :icon="'music'" :text="'Musics'"/>
+            <WindowFolderIcon :icon="'recent_actors'" :text="'Recently'"/>
+            <WindowFolderIcon  :icon="'home'" :text="'Home'"/>
+            <WindowFolderIcon  :icon="'computer'" :text="'Desktop'"/>
+            <WindowFolderIcon  :icon="'movie'" :text="'Videos'"/>
+            <WindowFolderIcon  :icon="'music_note'" :text="'Musics'"/>
             <WindowFolderIcon  :icon="'image'" :text="'Pictures'"/>
-            <WindowFolderIcon  :icon="'file-document'" :text="'Documents'"/>
+            <WindowFolderIcon  :icon="'description'" :text="'Documents'"/>
             <WindowFolderIcon  :icon="'delete'" :text="'Recycle Bin'"/>
             <div style="width:100%;height:2px;background-color:#efefef;margin-top:1px;margin-bottom:1px"></div>
-            <WindowFolderIcon  :icon="'desktop-mac-dashboard'" :text="'This PC'"/>
-            <WindowFolderIcon  :icon="'harddisk'" :text="'Root'"/>
+            <WindowFolderIcon  :icon="'desktop_windows'" :text="'This PC'"/>
             <div style="width:100%;height:2px;background-color:#efefef;margin-top:1px;margin-bottom:1px"></div>
-            <WindowFolderIcon  :icon="'earth'" :text="'Network'"/>
+            <WindowFolderIcon  :icon="'public'" :text="'Network'"/>
           </div>
           <div class="tw-h-full tw-select-none" style="width:1px">
             <WindowSider :mode="1" @mousedown.native="right_resize" />
@@ -169,9 +168,9 @@ export default {
   computed:{
     mdi_computed_direction() {
       if (this.direction_down) {
-        return 'mdi-chevron-down'
+        return 'chevron-down'
       } else {
-        return 'mdi-chevron-up'
+        return 'chevron-up'
       }
     },
     current_dir_list() {

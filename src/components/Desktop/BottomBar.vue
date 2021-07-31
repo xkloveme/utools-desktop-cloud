@@ -21,6 +21,7 @@
         "
         style="background-color: rgba(235, 235, 235, 0.42)"
       >
+      <!-- left -->
         <div
           class="
             tw-absolute tw-h-full tw-flex tw-items-center tw-justify-center
@@ -67,6 +68,7 @@
             </div>
           </div>
         </div>
+        <!-- center -->
         <div class="tw-flex-none tw-w-100 tw-h-full tw-block">
           <div
             class="
@@ -169,6 +171,7 @@
             />
           </div>
         </div>
+        <!-- right -->
         <div
           class="
             tw-absolute
@@ -183,7 +186,7 @@
         >
           <Icon
             :mode="'small'"
-            :iconn="'bell'"
+            :iconn="'notifications'"
             :smalltrue="false"
             @button_clicked="bell_clicked"
             :tagcont="display_article_num + ' Messages'"
@@ -210,7 +213,7 @@
           </div>
           <Icon
             :mode="'small'"
-            :iconn="'power-standby'"
+            :iconn="'power'"
             :smalltrue="false"
             :tagcont="'Power'"
             @click.native="halt_clicked"
@@ -226,7 +229,7 @@
           <div class="vl tw-mx-2"></div>
           <Icon
             :mode="'small'"
-            :iconn="show_drawer ? 'chevron-right' : 'chevron-left'"
+            :iconn="show_drawer ? 'chevron_right' : 'chevron_left'"
             style="z-index: 20"
             @button_clicked="arrow_clicked"
             :tagcont="'Folder'"
@@ -234,29 +237,29 @@
           <div class="tw-w-2"></div>
           <Icon
             :mode="'small'"
-            :iconn="'battery-70'"
-            class="hide_when_needed transform-drawer-1-normal"
+            :iconn="'battery_full'"
+            class="hide_when_needed transform-drawer-1-normal transform-drawer-1"
             :highertag="true"
             :tagcont="'Battery'"
           />
           <div class="tw-w-2"></div>
           <Icon
             :mode="'small'"
-            :iconn="'wifi-arrow-up-down'"
-            class="hide_when_needed transform-drawer-2-normal"
+            :iconn="'wifi'"
+            class="hide_when_needed transform-drawer-2-normal transform-drawer-2"
             :highertag="true"
             :tagcont="'Network'"
           />
           <div class="tw-w-2"></div>
           <Icon
             :mode="'small'"
-            :iconn="'volume-high'"
-            class="hide_when_needed transform-drawer-3-normal"
+            :iconn="'volume_up'"
+            class="hide_when_needed transform-drawer-3-normal transform-drawer-3"
             :highertag="true"
             :tagcont="'Volume'"
           />
           <div
-            class="vl tw-mx-2 hide_when_needed transform-drawer-4-normal"
+            class="vl tw-mx-2 hide_when_needed transform-drawer-4-normal transform-drawer-4"
           ></div>
         </div>
       </div>
@@ -295,11 +298,6 @@ export default {
     window.setInterval(() => {
       this.refresh_time()
     }, 1000)
-  },
-  mounted() {
-    if (this.fullWidth < 1124) {
-      this.arrow_clicked()
-    }
   },
   watch: {
     fullWidth() {

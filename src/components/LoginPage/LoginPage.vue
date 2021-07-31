@@ -35,7 +35,7 @@
           </div>
         </div>
         <button class="tw-rounded-full tw-w-12 tw-h-12 tw-mt-2 tw-bg-blue-600 tw-flex tw-items-center tw-justify-center hover:tw-bg-blue-700 tw-outline-none animate__animated" v-if="show_middle" @click="login_clicked" :class="{'animate__shakeX':button_shaking}">
-          <v-icon class="tw-text-gray-100">mdi-arrow-right</v-icon>
+          <v-icon class="tw-text-gray-100">arrow-right</v-icon>
         </button>
         <div v-if="!show_middle" class="tw-h-full tw-w-full  tw-flex tw-flex-row tw-flex-nowrap tw-justify-evenly tw-items-center" style="max-width:650px;min-width:300px" @click="blanker">
           <RestartButton :typename="'shutdown'" @click.native="halt_clicked"/>
@@ -53,10 +53,10 @@
         <div class="tw-h-full tw-flex-grow"></div>
         <div class="tw-h-full flex-none tw-w-76 tw-flex tw-justify-center tw-items-center tw-pr-2" style="min-width:300px">
           <button class="tw-rounded-full tw-w-12 tw-h-12 tw-bg-mygray-light hover:tw-bg-mygray-dark active:tw-bg-mygray-darker tw-flex tw-justify-center tw-items-center  tw-outline-none" @click="show_keyboard_clicked()">
-            <v-icon class="tw-text-gray-100 "  >mdi-keyboard</v-icon>
+            <v-icon class="tw-text-gray-100 "  >keyboard</v-icon>
           </button>
           <button class="tw-rounded-full tw-w-12 tw-h-12 tw-bg-mygray-light hover:tw-bg-mygray-dark active:tw-bg-mygray-darker ml-8 tw-flex tw-justify-center tw-items-center tw-outline-none" @click="show_middle_clicked">
-            <v-icon class="tw-text-gray-100 ">mdi-power</v-icon>
+            <v-icon class="tw-text-gray-100 ">power</v-icon>
           </button>
         </div>
       </div>

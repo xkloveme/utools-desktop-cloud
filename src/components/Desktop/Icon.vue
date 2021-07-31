@@ -2,7 +2,7 @@
   <div class="tw-w-9 tw-h-9  tw-rounded-lg tw-select-none">
     <div class=" tw-w-full tw-h-full tw-flex tw-justify-center tw-items-center">
       <button class="tw-rounded-lg tw-flex tw-justify-center tw-items-center tw-bg-gray-700 hover:tw-bg-gray-800 tw-outline-none" style="width:30px;height:30px" @mouseover="mouseover" @mouseleave="mouseleave" v-if="mode==='small'" @click="emit_event">
-        <v-icon class="tw-text-gray-100" :small="smalltrue">mdi-{{iconn}}</v-icon>
+        <v-icon class="tw-text-gray-100" :small="smalltrue">{{iconn}}</v-icon>
       </button>
       <button class="tw-rounded-lg tw-flex tw-justify-center tw-items-center tw-outline-none tw-w-12 tw-h-9" style="width:30px;height:30px" @mouseover="mouseover" @mouseleave="mouseleave" v-if="mode==='large'" @click="emit_event" >
         <img ref="shakeimg" :src="require('../../assets/images/icons/'+srcc+'.png')" class="animate__animated"/>

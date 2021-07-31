@@ -7,8 +7,8 @@
       </div>
     </template>
     <template v-slot:content>
-      <div class="tw-w-full tw-h-full tw-flex tw-flex-col tw-font-semibold tw-text-white  tw-leading-7 tw-tracking-wide tw-ml-1">
-        <textarea v-model="input_text" ref="textarea_ele" rows="102400" style="height:530px;resize:none;" class=" tw-outline-none change-srollbar" autofocus @keydown="messageSendlisten" @contextmenu.prevent="mr_clicked()"></textarea>
+      <div class="tw-w-full tw-h-full tw-flex tw-flex-col tw-font-semibold tw-bg-transparent tw-tracking-wide">
+        <textarea v-model="input_text" ref="textarea_ele" rows="102400" style="height:530px;resize:none;" class=" tw-outline-none change-srollbar tw-bg-transparent tw-text-green" autofocus @keydown="messageSendlisten" @contextmenu.prevent="mr_clicked()"></textarea>
       </div>
     </template>
   </Window>
@@ -351,6 +351,7 @@ export default {
 .change-srollbar{
   left:0;
   margin-right:3px;
+  color: green;
 }
 .change-srollbar::-webkit-scrollbar {/*滚动条整体样式*/
   width: 6px;     /*高宽分别对应横竖滚动条的尺寸*/

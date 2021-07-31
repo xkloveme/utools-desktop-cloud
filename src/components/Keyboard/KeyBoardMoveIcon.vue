@@ -1,6 +1,7 @@
 <template>
-  <div class="tw-w-11 tw-h-11 tw-absolute tw-flex tw-justify-center tw-items-center cursor-move" style="bottom:6px;left:56px">
-    <v-icon class="tw-text-gray-100">mdi-arrow-all</v-icon>
+  <div class="tw-w-11 tw-h-11 tw-absolute tw-flex tw-justify-center tw-items-center cursor-move" style="    bottom: -17px;
+    left: 62px;">
+    <v-icon class="tw-text-gray-100">zoom_out_map</v-icon>
   </div>
 </template>
 

@@ -7,7 +7,7 @@
           <div class="tw-h-full tw-px-3  tw-text-sm tw-font-normal tw-text-gray-50 tw-pt-2" style="white-space:nowrap;text-overflow: ellipsis;overflow: hidden;max-width:300px" >{{filename}}</div>
         </div>
         <div class="tw-h-9 tw-px-3  tw-flex tw-items-center tw-justify-center tw-bg-mygray-b3  tw-rounded-lg tw-ml-3 hover:tw-bg-mygray-b1 tw-text-mygray-b8" style="pointer-events:auto;">
-          <v-icon small>mdi-plus</v-icon>
+          <v-icon small>add</v-icon>
         </div>
         <!-- <div class=" tw-ml-4 tw-font-bold tw-tracking-wider"> {{filename}} </div> -->
       </div>
@@ -18,14 +18,14 @@
           <div class="tw-flex-none tw-h-full tw-flex tw-justify-center tw-items-center tw-px-3 tw-py-1 tw-select-none ">
             <button class="tw-flex tw-justify-center tw-items-center hover:tw-bg-mygray-b1 tw-px-2 rounded-lg tw-text-xs tw-text-gray-700 tw-w-full tw-h-full tw-outline-none">
               None
-              <v-icon small class="tw-ml-1">mdi-chevron-down</v-icon>
+              <v-icon small class="tw-ml-1">expand_more</v-icon>
             </button>
           </div>
           <div class="vl"></div>
           <div class="tw-flex-none tw-h-full tw-flex tw-justify-center tw-items-center tw-px-3 tw-py-1 tw-select-none">
             <button class="tw-flex tw-justify-center tw-items-center hover:tw-bg-mygray-b1 tw-px-2 rounded-lg tw-text-xs tw-text-gray-700 tw-w-full tw-h-full tw-outline-none">
               UTF-8
-              <v-icon small class="tw-ml-1">mdi-chevron-down</v-icon>
+              <v-icon small class="tw-ml-1">expand_more</v-icon>
             </button>
           </div>
           <div class="vl"></div>

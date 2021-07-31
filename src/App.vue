@@ -1,8 +1,8 @@
 <template>
-  <v-app>
+  <div>
     <Interlude/>
     <router-view v-wechat-title="$route.meta.title" />
-  </v-app>
+  </div>
 </template>
 
 <script>

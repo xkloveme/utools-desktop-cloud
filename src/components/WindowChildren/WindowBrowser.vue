@@ -10,18 +10,18 @@
     <template v-slot:content>
       <div class=" tw-w-full  tw-h-full tw-rounded-b-2xl tw-overflow-hidden tw-flex tw-flex-col tw-items-center">
         <div class="tw-h-11 tw-border-t tw-border-gray-400 tw-flex tw-items-center" style="background-color:#fafafa;width:99%">
-          <WindowBrowserButton :disabled="href_stack_pointer == (href_stack.length - 1)" :icon="'chevron-left'" class="tw-ml-3" @button_clicked="prev_clicked"/>
-          <WindowBrowserButton :disabled="href_stack_pointer===0" :icon="'chevron-right'" class="tw-ml-3" @button_clicked="next_clicked"/>
+          <WindowBrowserButton :disabled="href_stack_pointer == (href_stack.length - 1)" :icon="'chevron_left'" class="tw-ml-3" @button_clicked="prev_clicked"/>
+          <WindowBrowserButton :disabled="href_stack_pointer===0" :icon="'chevron_right'" class="tw-ml-3" @button_clicked="next_clicked"/>
           <WindowBrowserButton :disabled="false" :icon="'refresh'" class="tw-ml-3" @button_clicked="refresh_clicked"/>
-          <div ref="llock" class="tw-absolute tw-w-8 tw-h-8  tw-flex tw-items-center tw-justify-center hover:tw-bg-mygray-b3 tw-rounded-lg" style="left: calc(158px + 0.72%)" @mouseleave="unshow_lock" @mouseenter="show_lock">
-            <v-icon small>mdi-{{no_http?'alert-circle-outline':'lock'}}</v-icon>
+          <div ref="llock" class="tw-absolute tw-w-6 tw-h-6  tw-flex tw-items-center tw-justify-center hover:tw-bg-mygray-b3 tw-rounded-sm" style="left: calc(158px + 3%)" @mouseleave="unshow_lock" @mouseenter="show_lock">
+            <v-icon small>{{no_http?'report':'https'}}</v-icon>
             <div class="tw-absolute tw-py-1 tw-px-2 tw-border" :style="{'top':tipoffsetY + 'px','left':tipoffsetX  + 'px'}" style="background-color:#545868;color:#b2bbc6;white-space:nowrap" v-if="show_lock_tip">Show Website Details</div>
           </div>
           <input class="tw-flex-grow tw-ml-3 tw-h-9 focus:tw-bg-white tw-tracking-tight tw-px-10" style="outline-color:#4285f4;text-color:#939387" v-model="input_src" @keyup.enter="inputSubmit"/>
           <button class="tw-absolute tw-w-9 tw-h-9 tw-flex tw-items-center tw-justify-center tw-outline-none" style="right: calc(68px + 0.70%)">
-            <v-icon small>mdi-star-outline</v-icon>
+            <v-icon small>star_outline</v-icon>
           </button>
-          <WindowBrowserButton :disabled="false" :icon="'currency-eth'" class="tw-mx-4" :mode="1"/>
+          <WindowBrowserButton :disabled="false" :icon="'menu'" class="tw-mx-4" :mode="1"/>
         </div>
         <div class=" tw-h-0 tw-border-b tw-border-gray-300" style="width:99%"></div>
         <iframe ref="iframe_main" :src="real_src" frameborder="0" class="tw-w-full tw-h-full" onload="mouse_style_none"></iframe>

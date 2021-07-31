@@ -1,5 +1,4 @@
 const CompressionWebpackPlugin = require('compression-webpack-plugin')    //引入插件
-
 module.exports = {
   transpileDependencies: [
     'vuetify'
@@ -47,11 +46,23 @@ module.exports = {
         filename: '[path].gz[query]',
         algorithm: 'gzip',
         test: new RegExp('.(' + ['js', 'css'].join('|') + ')$'),
-        threshold: 1024,
+        threshold: 526,
         deleteOriginalAssets: false
       })
     ]
   },
+  // configureWebpack: config => {
+  //     // config.plugins.push(new BundleAnalyzerPlugin())
+  //     config.plugins.push(
+  //       new CompressionWebpackPlugin({
+  //         // gzip压缩配置
+  //         test: /\.js$|\.html$|\.css/, // 匹配文件名
+  //         threshold: 10240, // 对超过10kb的数据进行压缩
+  //         deleteOriginalAssets: false // 是否删除原文件
+  //       })
+  //     )
+  //     config.plugins.push(new VuetifyLoaderPlugin())
+  // },
   productionSourceMap: false,
   pwa: {
     iconPaths: {
@@ -81,6 +92,14 @@ module.exports = {
         config => config.devtool('cheap-source-map')
       )
 
+    if (process.env.NODE_ENV === "production") {
+      config.optimization.minimizer("terser").tap(args => {
+        // 去除生产环境console
+        args[0].terserOptions.compress.drop_console = true
+        return args
+      })
+    }
+
     config
       .when(process.env.NODE_ENV !== 'development',
         config => {
@@ -88,6 +107,11 @@ module.exports = {
             .optimization.splitChunks({
               chunks: 'all',
               cacheGroups: {
+                vue: {
+                  name: 'chunk-vuejs',
+                  test: /[\\/]node_modules[\\/]_?vue(.*)/,
+                  priority: 20
+                },
                 libs: {
                   name: 'chunk-libs',
                   test: /[\\/]node_modules[\\/]/,
@@ -98,7 +122,13 @@ module.exports = {
                   name: 'chunk-vuetify', // split vuetify into a single package
                   priority: 20, // the weight needs to be larger than libs and app or it will be packaged into libs or app
                   test: /[\\/]node_modules[\\/]_?vuetify(.*)/ // in order to adapt to cnpm
-                }
+                },
+                commons: { // split async commons chunk
+                  name: 'chunk-async-commons',
+                  minChunks: 2,
+                  priority: 40,
+                  chunks: 'async'
+                },
               }
             })
           config.optimization.runtimeChunk('single')
